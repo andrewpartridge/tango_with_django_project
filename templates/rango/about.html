@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>About</title>
+	</head>
+	
+	<body>
+		<h1>This is the about page!</h1>
+		<div>
+		<a href="/rango/index/">Index</a><br />
+		<img src="{% static "images/castle.jpg" %}" alt="Dean Castle"/>
+		</div>
+		<div>
+			<i>{{ italicmessage }}</i></br>
+			<strong>This tutorial has been put together by Andrew Partridge.</strong>
+		</div>
+		<div>
+			<img src="{{ MEDIA_URL }}cat.jpg" />
+		</div>
+	</body>
+	
+</html>
